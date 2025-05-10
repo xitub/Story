@@ -1,0 +1,192 @@
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop
+$ cd Story
+<------------------------------------------------------------------------------------------------->
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story
+$ ls
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story
+$ touch chapter1.txt
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story
+$ code chapter1.txt
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story
+$ git init
+Initialized empty Git repository in C:/Users/Lenovo/OneDrive/Desktop/Story/.git/
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ ls -a
+./  ../  .git/  chapter1.txt
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)       
+        chapter1.txt        
+
+nothing added to commit but untracked files present (use "git add" to track)
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git add chapter1.txt
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   chapter1.txt
+
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git rm --cached chapter1.txt
+rm 'chapter1.txt'
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)       
+        chapter1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git add chapter1.txt
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   chapter1.txt
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git commit -m "Complete Chapter 1"
+[master (root-commit) 4d2ccd9] Complete Chapter 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 chapter1.txt
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git log
+commit 4d2ccd976d31bfd11f1b8af202fd42fdbaa3bd89 (HEAD -> master)
+Author: user4815162348 <Vinaymadivalcoc@outlook.com>
+Date:   Sat May 10 12:40:11 2025 +0530
+
+    Complete Chapter 1
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ touch chapter2.txt chapter3.txt
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git add .
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   chapter2.txt
+        new file:   chapter3.txt
+
+<------------------------------------------------------------------------------------------------->
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ code chapter2.txt chapter3.txt
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git commit -m "Complete Chapter 2 and 3"
+[master c316013] Complete Chapter 2 and 3
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 chapter2.txt
+ create mode 100644 chapter3.txt
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git log
+commit c3160133fc3418bd023a4ddf587515dbfd1ecc11 (HEAD -> master)
+Author: user4815162348 <Vinaymadivalcoc@outlook.com>
+Date:   Sat May 10 12:49:07 2025 +0530
+
+    Complete Chapter 2 and 3
+
+commit 4d2ccd976d31bfd11f1b8af202fd42fdbaa3bd89
+Author: user4815162348 <Vinaymadivalcoc@outlook.com>
+Date:   Sat May 10 12:40:11 2025 +0530
+
+    Complete Chapter 1
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   chapter1.txt
+        modified:   chapter2.txt
+        modified:   chapter3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")      
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git add .
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   chapter1.txt
+        modified:   chapter2.txt
+        modified:   chapter3.txt
+<------------------------------------------------------------------------------------------------->
+
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)       
+$ git diff chapter3.txt
+diff --git a/chapter3.txt b/chapter3.txt
+index 664acd5..82b2abc 100644
+--- a/chapter3.txt
++++ b/chapter3.txt
+@@ -1 +1 @@
+-sdcvsjvfkhv,snnnnnnnnndvn,ffvf.ewfdf.frg
+\ No newline at end of file
++sdcvsjvfkhv,snnnnnnnnndvn,ffvf.ewfdf.frguhadsobcvjk.ddfadfibfk
+\ No newline at end of file
+<------------------------------------------------------------------------------------------------->
+
+Lenovo@LAPTOP-7027QOQF MINGW64 ~/OneDrive/Desktop/Story (master)
+$ git checkout chapter3.txt
+Updated 1 path from the index
+<------------------------------------------------------------------------------------------------->
